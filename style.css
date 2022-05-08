@@ -1,31 +1,44 @@
 * {
     box-sizing: border-box;
     width: 100%;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+body {
+        background: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.6),
+      rgba(0, 0, 0, 0.6)
+    ),
+    url("images/fond1.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
 header {
   display: flex;
 }
 
-.title {
+.contact-header {
     display: flex;
-    background-color: green;
     padding: 10px;
     color: white;
 }
 
-.title i {
+.contact-header i {
     font-size: 0.7em;
     text-align: center;
     margin: auto;
 }
 
-.title a {
-    color: white;
+.contact-header a {
     text-decoration: none;
+    color: white;
 }
 
-.title img {
+.contact-header img {
     height: 50px;
     width: auto;
 }
@@ -36,39 +49,62 @@ h1, h2 {
     text-align: center;
 }
 
+h2 {
+    font-size: 0.4em;
+    margin: 20px auto;
+}
+
+h3 {
+    color: #000;
+}
+
 main {
-    background-image: url(images/fond.jpg); 
     background-repeat: no-repeat;
     background-size: cover;
     padding: 2%;
 }
 
+.content {
+    display: flex;
+}
+
+.content img {
+    border-radius: 50px;
+    width: 100px;
+}
+
 .row-desc {
     color: white;
     text-align: center; 
+    margin: 26% auto;
+}
+
+.formulaire {
+    width: 30%;
 }
 
 form {
     background-color: black;
     padding: 20px;
     border-radius: 10px;
-    width: 30%;
+    float: right;
+    margin-top: 10%;
 }
 
-.form label {
+form label {
     font-size: 1em;
     font-family: 'Open Sans', sans-serif;
     font-weight: 300;
     color: #ccc;
 }
 
-.form .form-desc {
+form .form-desc {
     font-size: 0.7em;
     width: 90%;
     margin: 10px 0;
 }
 
-.form button {
+form button {
     width: 100%;
     padding: 10px;
     margin-bottom: 10px;
@@ -79,6 +115,103 @@ form {
     font-weight: 300;
 }
 
-.card {
-    margin: 5px;
+.desc-group {
+    display: flex;
+    flex-direction: column;
+}
+.desc {
+    display: flex;
+}
+
+.desc p {
+    margin: auto 5%;
+    color: white;
+}
+
+.desc1 {
+    font-size: 0.7em;
+    border: 2px solid #ccc;
+    box-shadow: 0 0 20px #000;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 200px;
+    height: 150px;
+    display: table;
+    margin: 50px auto;
+}
+
+.desc1 h3 {
+    text-align: center;
+    font-size: 1.5em;
+    color: white;
+    font-size: bolder;
+    height: 100%;
+    vertical-align: middle;
+    display: table-cell;
+}
+
+.img1 {
+     background: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.4),
+      rgba(0, 0, 0, 0.4)
+    ),
+    url("images/gazon.jpg") no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.img2 {
+    background: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.4),
+      rgba(0, 0, 0, 0.4)
+    ),
+    url("images/cloture.jpg") no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.img3 {
+     background: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.4),
+      rgba(0, 0, 0, 0.4)
+    ),
+    url("images/elag.jpg") no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.img4 {
+     background: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.4),
+      rgba(0, 0, 0, 0.4)
+    ),
+    url("images/dessouchage.jpg") no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+@media screen and (max-width: 600px) {
+    .content {
+        flex-direction: column;
+    }
+
+    .formulaire {
+        width: 95%;
+    }
+    
+    .contact-header a {
+        font-size: 0.7em;
+    }
 }
