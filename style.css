@@ -29,7 +29,7 @@ header {
 }
 
 .contact-header i {
-    font-size: 0.7em;
+    font-size: 1em;
     text-align: center;
     margin: auto;
 }
@@ -225,7 +225,7 @@ form button {
   background-size: cover;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 900px) {
     .container {
         flex-direction: column;
     }
