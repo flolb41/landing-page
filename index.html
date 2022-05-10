@@ -18,7 +18,7 @@
       <div class="contact-header">
         <h4>Verrières-le-Buisson <br>Paysagiste</h4>
         <i class="fa-solid fa-phone"> <a href="tel:0609872944">06 09 87 29 44</a></i>
-        <i class="fa-solid fa-at"> <a href="mailto:webleadfrance26@gmail.com">webleadfrance26@gmail.com</a></i>
+        <i class="fa-solid fa-at"> <a href="mailto:info@paysagiste-verrieres-le-buisson.fr">info@paysagiste-verrieres-le-buisson.fr</a></i>
       </div>
     </header>    
     <main>
@@ -88,8 +88,8 @@
                       Ville: " . $_POST['city'] . "
                       Message: " . $_POST['message'];
 
-                    $retour = mail("webleadfrance26@gmail.com", $_POST["sujet"], $message,
-                        "From:contact@monsite.fr" . "\r\n" . "Reply-To: " . $_POST["email"]);
+                    $retour = mail("info@paysagiste-verrieres-le-buisson.fr", $_POST["sujet"], $message,
+                        "From:info@paysagiste-verrieres-le-buisson.fr" . "\r\n" . "Reply-To: " . $_POST["email"]);
                     if ($retour) {
                         echo "<p>Votre message a bien été envoyé !</p>";
                     } else {
