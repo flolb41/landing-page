@@ -228,6 +228,8 @@ form button {
 }
 
 @media screen and (max-width: 900px) {
+   
+
     .container {
         flex-direction: column;
     }
@@ -239,7 +241,9 @@ form button {
     .contact-header a {
         font-size: 0.7em;
     }
-
+    .contact-header h4 {
+        font-size: 0.8em;
+    }
     .contact-header img {
         height: 50px;
     }
